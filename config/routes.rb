@@ -2,11 +2,15 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :students
+      get 'students' => 'students#index'
+      get 'students' => 'students#create', :as => 'create_student'
     end
   end
   
   resources :students
   root to: 'students#index'
+  
+  post 'students' => 'students#create'
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
