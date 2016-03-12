@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 group :development, :test do
 # Use sqlite3 as the database for Active Record
@@ -22,6 +22,7 @@ group :development, :test do
     gem 'factory_girl_rails'
     gem 'faker'
     gem 'responder'
+    
 end
 
 
@@ -32,6 +33,6 @@ end
 
 group :production do
     gem 'pg' # for Heroku deployment
-    gem 'rails_12factor'
+    #gem 'rails_12factor'
 end
 
