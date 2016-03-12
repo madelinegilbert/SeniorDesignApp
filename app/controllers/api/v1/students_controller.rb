@@ -1,6 +1,6 @@
 class Api::V1::StudentsController < ApplicationController
        respond_to :json
-      
+        
         def index
             respond_with Student.all
         end
@@ -26,6 +26,8 @@ class Api::V1::StudentsController < ApplicationController
         def update
             respond_with Student.update(params[:id], params[:students])
         end
+        
+        #butts
       
         def destroy
             respond_with Student.destroy(params[:id])
